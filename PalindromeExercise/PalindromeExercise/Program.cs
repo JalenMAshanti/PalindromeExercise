@@ -6,7 +6,10 @@ namespace PalindromeExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Palindrome palindrome = new Palindrome();
+            palindrome.PalindromeDetection("civic");
         }
+
+  
     }
 }
