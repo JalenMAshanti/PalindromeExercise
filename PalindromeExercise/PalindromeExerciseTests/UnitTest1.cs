@@ -12,6 +12,7 @@ public class UnitTest1
     [InlineData("hello", false)]
     [InlineData("civic", true)]
     [InlineData("Example", false)]
+    [InlineData("A SANTA AT NASA", true)]
 
     public void PalindromeTest(string word, bool expected)
     {

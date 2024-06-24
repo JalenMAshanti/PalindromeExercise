@@ -7,7 +7,7 @@ namespace PalindromeExercise
         static void Main(string[] args)
         {
             Palindrome palindrome = new Palindrome();
-            palindrome.PalindromeDetection("civic");
+            palindrome.PalindromeDetection("A STANTA AT NASA");
         }
 
   
