@@ -10,16 +10,13 @@ namespace PalindromeExercise
     {
         public bool PalindromeDetection (string word)
         {
-            //throw new NotImplementedException ();   
-                
-            List<char> oringalWordWithoutSpaces = new List<char> (word.Where(x => char.IsLetter(x)));
-            List<char> wordReversed = new List<char>(word.Where(x => char.IsLetter(x)).Reverse());
+           
+            //Refactored
+            string originalString = new string(word.Where(x => char.IsLetter(x)).ToArray()).ToLower();
+            string reversedString = new string(word.Where(x => char.IsLetter(x)).Reverse().ToArray()).ToLower();
 
-            string originalString = new string(oringalWordWithoutSpaces.ToArray());
-            string reversedString = new string(wordReversed.ToArray());
-
-            bool result = (originalString.ToLower() == reversedString.ToLower()) ? true : false;
-            return result;
+            return  (originalString == reversedString) ? true : false;
+            
         }
 
     }
